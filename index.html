@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro to Forms</title>
+    </head>
+    <body>
+        <form>
+            <label>
+                Email:
+                <input type="email" name="user-email" id="user-email" placeholder="email here..."/><br>  
+            </label>
+            <label>
+                Title:
+                <input type="text" name="title" id="text-title" placeholder="title here..."/><br>  
+            </label>
+            <label for="blog-post">
+                Blog Post:
+                <input type="text" name="blog-post" id="blog-post" placeholder="enter text here..." height="100px" required/>
+            </label><br>
+            <label>
+                Pin post?
+                <input type="checkbox" id="pin-post" name="pin" checked/>
+            </label><br>
+            <label>
+                Post visibility: 
+                <label for="public">Public
+                    <input type="radio" id="public" value="public" name="visibility"/>
+                </label>
+                <label for="private">Private
+                    <input type="radio" id="private" value="private" name="visibility"/>
+                </label>
+            </label><br>
+            <label>
+                Post Category
+                <select id="post-category" name="category">
+                    <option> Select category </option>
+                    <option value="personal"> Personal </option>
+                    <option value="professional"> Professional </option>
+                </select>
+            </label><br>
+            <input type="submit" value="Create Post"
+            name="submit-button" id="submit-button"/>
+        </form>
+    </body>
+</html>
